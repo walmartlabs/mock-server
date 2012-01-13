@@ -1,0 +1,19 @@
+{
+  "name": "mock-server",
+  "description": "Your friendly mock server",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/walmartlabs/mock-server.git"
+  },
+  "engines": {
+    "node": "~0.4.5"
+  },
+  "dependencies": {
+      "connect": "~1.8",
+      "express": "~2.5"
+  },
+  "bin": {
+    "mock-server": "index.js"
+  }
+}

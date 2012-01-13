@@ -1,0 +1,438 @@
+{ "associateLoginRequired" : { "associateLoginRequired" : false },
+  "cidRequired" : { "cidRequired" : false },
+  "orderItems" : { "items" : [ { 
+			"availableShippingOptions":[
+			{
+				"destination":"SITE_TO_STORE",
+				"estimatedArrivalTime":"2011-08-05T23:59:59",
+				"iD":"4",
+				"description":"(5 to 6 business days for shipping, plus processing time*)",
+				"name":"Store Pickup"
+			},
+	   		{
+	    		"destination":"SHIP_TO_HOME",
+	    		"estimatedArrivalTime":"2011-08-01T23:59:59",
+	    		"iD":"1",
+	    		"description":"(3 to 7 business days for shipping, plus processing time*)",
+	    		"name":"Standard Shipping"
+	    	},
+	    	{
+	    		"destination":"SHIP_TO_HOME",
+	    		"estimatedArrivalTime":"2011-07-29T23:59:59",
+	    		"iD":"2",
+	    		"description":"(2 to 3 business days for shipping, plus processing time*)",
+	    		"name":"2- to 3-Day Shipping"
+	    	},
+	    	{
+	    		"destination":"SHIP_TO_HOME",
+	    		"estimatedArrivalTime":"2011-07-27T23:59:59",
+	    		"iD":"3",
+	    		"description":"(1 business day for shipping, plus processing time*)",
+	    		"name":"1-Day Shipping"
+	    	}
+	    	],
+	    	"selectedShippingOption":{
+	    		"destination":"SHIP_TO_HOME",
+	    		"estimatedArrivalTime":"2011-07-29T23:59:59",
+	    		"iD":"2",
+	    		"description":"(2 to 3 business days for shipping, plus processing time*)",
+	    		"name":"2- to 3-Day Shipping"
+	    	},
+            "iD" : "7679850__0__2",
+            "imageThumbnailUrl" : "http://i.walmartimages.com/i/p/00/07/60/31/92/0007603192434_60X60.gif",
+            "itemId" : 7679850,
+            "itemImage150" : "http://i.walmartimages.com/i/p/00/07/60/31/92/0007603192434_150X150.jpg",
+            "name" : "Fruit of the Loom - Men's Zip-Front Hoodie",
+            "price" : "$10.00",
+            "quantity" : 1,
+            "statusMessages" : [  ],
+            "variantNames" : [ "Size",
+                "Color"
+              ],
+            "variants" : [ { "name" : "Size",
+                  "type" : "Size",
+                  "value" : "M"
+                },
+                { "name" : "Color",
+                  "type" : "Color",
+                  "value" : "Black Heather"
+                }
+              ]
+          },
+          {
+			"availableShippingOptions":[
+			{
+				"destination":"SITE_TO_STORE",
+				"estimatedArrivalTime":"2011-08-05T23:59:59",
+				"iD":"4",
+				"description":"(5 to 6 business days for shipping, plus processing time*)",
+				"name":"Store Pickup"
+			},
+	   		{
+	    		"destination":"SHIP_TO_HOME",
+	    		"estimatedArrivalTime":"2011-08-01T23:59:59",
+	    		"iD":"1",
+	    		"description":"(3 to 7 business days for shipping, plus processing time*)",
+	    		"name":"Standard Shipping"
+	    	},
+	    	{
+	    		"destination":"SHIP_TO_HOME",
+	    		"estimatedArrivalTime":"2011-07-29T23:59:59",
+	    		"iD":"2",
+	    		"description":"(2 to 3 business days for shipping, plus processing time*)",
+	    		"name":"2- to 3-Day Shipping"
+	    	},
+	        {
+	        	"destination":"SHIP_TO_HOME",
+	        	"estimatedArrivalTime":"2011-07-26T23:59:59",
+	        	"iD":"3",
+	        	"description":"(1 business day for shipping, plus processing time*)",
+	        	"name":"1-Day Shipping"
+	        }
+	        ],
+	        "selectedShippingOption":{
+	        	"destination":"SITE_TO_STORE",
+	        	"estimatedArrivalTime":"2011-08-04T23:59:59",
+	        	"iD":"4",
+	        	"description":"(5 to 6 business days for shipping, plus processing time*)",
+	        	"name":"Store Pickup"
+	        },
+	        "statusMessages":[],
+	        "iD":"5499231__0__11",
+	        "itemId":5499231,
+	        "name":"Harry Potter and the Deathly Hallows",
+			"itemImage150":"http:\/\/i.walmartimages.com\/i\/p\/11\/12\/99\/80\/34\/1112998034225_150X150.jpg",
+	    	"imageThumbnailUrl":"http:\/\/i.walmartimages.com\/i\/p\/97\/80\/75\/66\/56\/9780756656232_60X60.gif",
+	        "price":"$20.25",
+	        "quantity":1,
+	        "variantNames":[],
+	        
+        "bundleConfig": {
+            "components": [{
+                "componentId": 1,
+                "componentChildren": [{
+                    "itemId": 15105406,
+                    "itemName": "Xbox 360 250GB Console w\/ Kinect",
+                    "imageThumbnailUrl": "http:\/\/i-e6.walmartimages.com\/i\/p\/00\/88\/53\/70\/23\/0088537023609_60X60.gif",
+                    "itemImage150": "http:\/\/i-e6.walmartimages.com\/i\/p\/00\/88\/53\/70\/23\/0088537023609_150X150.jpg"
+                }]
+            },
+            {
+                "componentId": 8,
+                "componentChildren": [{
+                    "itemId": 14262193,
+                    "itemName": "Crysis 2 (Xbox 360)",
+                    "imageThumbnailUrl": "http:\/\/i-e6.walmartimages.com\/i\/p\/00\/01\/46\/33\/19\/0001463319207_60X60.gif",
+                    "itemImage150": "http:\/\/i-e6.walmartimages.com\/i\/p\/00\/01\/46\/33\/19\/0001463319207_150X150.jpg"
+                }]
+            },
+            {
+                "componentId": 9,
+                "componentChildren": [{
+                    "itemId": 15126817,
+                    "itemName": "Xbox 360 Wireless Controller - Black (Xbox 360)",
+                    "imageThumbnailUrl": "http:\/\/i-e6.walmartimages.com\/i\/p\/00\/88\/53\/70\/11\/0088537011484_60X60.gif",
+                    "itemImage150": "http:\/\/i-e6.walmartimages.com\/i\/p\/00\/88\/53\/70\/11\/0088537011484_150X150.jpg"
+                }]
+            }]
+        }
+	        
+	    },
+	    {
+	        "availableShippingOptions":[
+	        {
+	        	"destination":"SITE_TO_STORE",
+	        	"estimatedArrivalTime":"2011-08-05T23:59:59",
+	        	"iD":"4",
+	        	"description":"(5 to 6 business days for shipping, plus processing time*)",
+	       		"name":"Store Pickup"
+	       	},
+	       	{
+	       		"destination":"SHIP_TO_HOME",
+	       		"estimatedArrivalTime":"2011-08-01T23:59:59",
+	       		"iD":"1",
+	       		"description":"(3 to 7 business days for shipping, plus processing time*)",
+	       		"name":"Standard Shipping"
+	       	},
+	       	{
+        		"destination":"SHIP_TO_HOME",
+	       		"estimatedArrivalTime":"2011-07-29T23:59:59",
+	       		"iD":"2",
+	       		"description":"(2 to 3 business days for shipping, plus processing time*)",
+	       		"name":"2- to 3-Day Shipping"
+	       	},
+	       	{
+	       		"destination":"SHIP_TO_HOME",
+	       		"estimatedArrivalTime":"2011-07-27T23:59:59",
+        		"iD":"3",
+	        	"description":"(1 business day for shipping, plus processing time*)",
+	       		"name":"1-Day Shipping"
+	       	}
+	       	],
+	        "selectedShippingOption":{
+	       		"destination":"SITE_TO_STORE",
+	       		"estimatedArrivalTime":"2011-08-05T23:59:59",
+	       		"iD":"4",
+	       		"description":"(5 to 6 business days for shipping, plus processing time*)",
+	       		"name":"Store Pickup"
+	       	},
+	       	"statusMessages":[],
+	       	"iD":"15075124__0__10",
+        	"itemId":15075124,
+	       	"name":"Apple iPod touch, 8GB (with FaceTime camera and Retina display)",
+			"itemImage150":"http:\/\/i.walmartimages.com\/i\/p\/11\/12\/99\/80\/34\/1112998034225_150X150.jpg",
+	    	"imageThumbnailUrl":"http:\/\/i.walmartimages.com\/i\/p\/97\/80\/75\/66\/56\/9780756656232_60X60.gif",
+	       	"price":"$215.00",
+	       	"quantity":1,
+	       	"variantNames":[]
+	    },
+	    {
+        	"availableShippingOptions":[
+	        {
+	       		"destination":"SHIP_TO_HOME",
+	       		"estimatedArrivalTime":"2011-08-01T23:59:59",
+	    		"iD":"1",
+	       		"description":"(3 to 7 business days for shipping, plus processing time*)",
+	       		"name":"Standard Shipping"
+	       	},
+	       	{
+	       		"destination":"SHIP_TO_HOME",
+        		"estimatedArrivalTime":"2011-07-29T23:59:59",
+	        	"iD":"2",
+	       		"description":"(2 to 3 business days for shipping, plus processing time*)",
+	       		"name":"2- to 3-Day Shipping"
+	       	},
+	       	{
+	       		"destination":"SHIP_TO_HOME",
+	       		"estimatedArrivalTime":"2011-07-27T23:59:59",
+	       		"iD":"3",
+	       		"description":"(1 business day for shipping, plus processing time*)",
+        		"name":"1-Day Shipping"
+	        }
+	        ],
+	       	"selectedShippingOption":{
+	       		"destination":"SHIP_TO_HOME",
+	       		"estimatedArrivalTime":"2011-07-27T23:59:59",
+	       		"iD":"3",
+	       		"description":"(1 business day for shipping, plus processing time*)",
+	       		"name":"1-Day Shipping"
+	       	},
+	       	"statusMessages":[],
+	       	"iD":"14914348__0__8",
+        	"itemId":14914348,
+	        "name":"uni-ball 207 Medium Point Gel Black Pen, 4-count",
+			"itemImage150":"http:\/\/i.walmartimages.com\/i\/p\/11\/12\/99\/80\/34\/1112998034225_150X150.jpg",
+	    	"imageThumbnailUrl":"http:\/\/i.walmartimages.com\/i\/p\/97\/80\/75\/66\/56\/9780756656232_60X60.gif",
+	       	"price":"$6.24",
+	       	"quantity":1,
+	       	"variantNames":[]
+	    }
+	    ],
+	    "msgs": [ ]
+	},
+	"availableCreditCards": [
+	{
+		"billingAddress":{
+			"city":"Brisbane",
+			"state":"CA",
+			"street1":"7000 marina blvd",
+			"street2":"",
+			"zip":"94005"
+		},
+		"expiryMonth":"7",
+		"expiryYear":"2011",
+		"iD":"1",
+		"maskedNumber":"XXXX-XXXX-XXXX-2227",
+		"nameOnCard":"Samuel Jackson",
+		"phoneNumber":"(650) 553-1414",
+		"type":"VISA",
+		"expired":false,
+		"cidRequired":true,
+		"statusMessages":[]
+	},
+	{
+		"billingAddress":{
+			"city":"Brisbane",
+			"state":"CA",
+			"street1":"7000 marina blvd",
+			"street2":"",
+			"zip":"94005"
+		},
+		"expiryMonth":"7",
+		"expiryYear":"2012",
+		"iD":"2",
+		"maskedNumber":"XXXX-XXXX-XXXX-2227",
+		"nameOnCard":"Samuel Jackson",
+		"phoneNumber":"(650) 553-1414",
+		"type":"AMEX",
+		"expired":false,
+		"cidRequired":true,
+		"statusMessages":[]
+	}
+	],
+	"selectedCreditCard": {
+		"billingAddress":{
+			"city":"Brisbane",
+			"state":"CA",
+			"street1":"7000 marina blvd",
+			"street2":"",
+			"zip":"94005"
+		},
+		"expiryMonth":"7",
+		"expiryYear":"2012",
+		"iD":"2",
+		"maskedNumber":"XXXX-XXXX-XXXX-2227",
+		"nameOnCard":"Samuel Jackson",
+		"phoneNumber":"(650) 553-1414",
+		"type":"VISA",
+		"expired":false,
+		"cidRequired":true,
+		"statusMessages":[]
+	},
+  "selectedShip2HomeAddress" : { "address" : { "city" : "Foster City",
+          "country" : "USA",
+          "state" : "CA",
+          "street1" : "1040 Foster City Blvd.",
+          "street2" : "",
+          "zip" : "94404"
+        },
+      "firstName" : "wal",
+      "iD" : "336358055",
+      "lastName" : "mob9",
+      "phoneNumber" : "3333333333",
+      "preferred" : true,
+      "statusMessages" : [  ]
+    },
+	"selectedShip2StoreAddress": {
+		"address":{
+			"city":"Oakland",
+			"country":"United States",
+			"state":"CA",
+			"street1":"8400 Edgewater Dr",
+			"zip":"94621"
+		},
+		"hoursOfOperation":[
+		{
+			"day":"Call store",
+			"time":""
+		}
+		],
+		"iD":"5457",
+		"latitude":"37.74",
+		"longitude":"-122.1982",
+		"openDate":"8\/24\/2005",
+		"phone":"(510) 430-9606",
+		"reOpenDate":"7\/22\/2011",
+		"storeNumber":"5457",
+		"storeServices":[
+		{
+			"hoursOfOperation":[
+			{
+				"day":"Call store","time":""
+			}
+			],
+			"name":"Cell Phones, Plans &amp; More"
+		},
+		{
+			"hoursOfOperation":[
+			{
+				"day":"Call store",
+				"time":""
+			}
+			],
+			"name":"Garden Center"
+		},
+		{
+			"hoursOfOperation":[
+			{
+				"day":"Sun - Sat",
+				"time":"10:00AM - 10:00PM"
+			}
+			],
+			"name":"Site to Store<sup>SM<\/sup>"
+		},
+		{
+			"hoursOfOperation":[
+			{
+				"day":"Call store",
+				"time":""
+			}
+			],
+			"name":"L.e.i. Apparel"
+		},
+		{
+			"hoursOfOperation":[
+			{
+				"day":"Sun",
+				"time":"10:00AM - 06:00PM"
+			},
+			{
+				"day":"Mon - Fri","time":"09:00AM - 09:00PM"
+			},
+			{
+				"day":"Sat",
+				"time":"09:00AM - 07:00PM"
+			}
+			],
+			"name":"Pharmacy",
+			"phone":"(510) 430-9723"
+		},
+		{
+			"hoursOfOperation":[
+			{
+				"day":"Sun",
+				"time":"10:00AM - 08:00PM"
+			},
+			{
+				"day":"Mon - Sat",
+				"time":"09:00AM - 09:00PM"
+			}
+			],
+			"name":"Photo Center"
+		},
+		{
+			"hoursOfOperation":[
+			{
+				"day":"Call store",
+				"time":""
+			}
+			],
+			"name":"1-Hour Photo Center"
+		},
+		{
+			"hoursOfOperation":[
+			{
+				"day":"Call store",
+				"time":""
+			}
+			],
+			"name":"Pick Up Today"
+		},
+		{
+			"hoursOfOperation":[
+			{
+				"day":"Call store",
+				"time":""
+			}
+			],
+			"name":"Tire &#38; Lube",
+			"phone":"(510) 430-9719"
+		},
+		{
+			"hoursOfOperation":[
+			{
+				"day":"Call store",
+				"time":""
+			}
+			],
+			"name":"Vision Center",
+			"phone":"(510) 430-9734"
+		}
+		],
+		"storeType":"2",
+		"description":"Walmart",
+		"availableForS2S":"true",
+		"storeClosedTemporarily":"false",
+		"storeOpeningSoon":"false"
+	}
+}

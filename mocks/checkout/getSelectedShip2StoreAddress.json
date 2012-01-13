@@ -1,0 +1,124 @@
+{
+   "address":{
+      "city":"Mountain View",
+      "country":"United States",
+      "state":"CA",
+      "street1":"600 Showers Dr",
+      "zip":"94040"
+   },
+   "hoursOfOperation":[
+      {
+         "day":"Call store",
+         "time":""
+      }
+   ],
+   "iD":"2280",
+   "latitude":"37.4008",
+   "longitude":"-122.11",
+   "openDate":"11\/1\/1995",
+   "phone":"(650) 917-0796",
+   "reOpenDate":"7\/25\/2011",
+   "storeNumber":"2280",
+   "storeServices":[
+      {
+         "hoursOfOperation":[
+            {
+               "day":"Sun",
+               "time":"10:00AM - 06:00PM"
+            },
+            {
+               "day":"Mon - Fri",
+               "time":"09:00AM - 09:00PM"
+            },
+            {
+               "day":"Sat",
+               "time":"09:00AM - 07:00PM"
+            }
+         ],
+         "name":"Pharmacy",
+         "phone":"(650) 917-0878"
+      },
+      {
+         "hoursOfOperation":[
+            {
+               "day":"Sun",
+               "time":"10:00AM - 08:00PM"
+            },
+            {
+               "day":"Mon - Sat",
+               "time":"09:00AM - 09:00PM"
+            }
+         ],
+         "name":"Photo Center",
+         "phone":"(650) 917-1085"
+      },
+      {
+         "hoursOfOperation":[
+            {
+               "day":"Call store",
+               "time":""
+            }
+         ],
+         "name":"1-Hour Photo Center"
+      },
+      {
+         "hoursOfOperation":[
+            {
+               "day":"Call store",
+               "time":""
+            }
+         ],
+         "name":"Same Day Pickup Photo Center"
+      },
+      {
+         "hoursOfOperation":[
+            {
+               "day":"Call store",
+               "time":""
+            }
+         ],
+         "name":"Pick Up Today"
+      },
+      {
+         "hoursOfOperation":[
+            {
+               "day":"Call store",
+               "time":""
+            }
+         ],
+         "name":"Cell Phones, Plans &amp; More"
+      },
+      {
+         "hoursOfOperation":[
+            {
+               "day":"Call store",
+               "time":""
+            }
+         ],
+         "name":"Garden Center"
+      },
+      {
+         "hoursOfOperation":[
+            {
+               "day":"Sun - Sat",
+               "time":"10:00AM - 10:00PM"
+            }
+         ],
+         "name":"Site to Store<sup>SM<\/sup>"
+      },
+      {
+         "hoursOfOperation":[
+            {
+               "day":"Call store",
+               "time":""
+            }
+         ],
+         "name":"L.e.i. Apparel"
+      }
+   ],
+   "storeType":"2",
+   "description":"Walmart",
+   "availableForS2S":"true",
+   "storeClosedTemporarily":"false",
+   "storeOpeningSoon":"false"
+}
