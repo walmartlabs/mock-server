@@ -9,14 +9,14 @@ var fs = require('fs'),
  */
 
 module.exports = exports = {
-    "/m/j\\?service=Taxonomy&method=getAllDepartments": "getAllDepartments.json",
-    "/m/j\\?service=Taxonomy&method=getRollBacks": "getRollbacks.json",
+    "/m/j\\?service=Taxonomy&method=getAllDepartments.*": "getAllDepartments.json",
+    "/m/j\\?service=Taxonomy&method=getRollBacks.*": "getRollbacks.json",
     "/m/j\\?service=Browse&method=browseByToken.*": "browseByToken.json",
     "/m/j\\?service=Browse&method=search.*": "search.json",
     "/m/j\\?service=Browse&method=searchByDepartment.*": "searchByDepartment.json",
     "/m/j\\?service=Suggestions&method=getSuggestions.*": "getSuggestions.json",
     "/m/j\\?service=Reviews&method=getReviews&p1=.*": "getReviews.json",
-    "/m/j\\?service=Vod&method=getVod": "getVod.json",
+    "/m/j\\?service=Vod&method=getVod.*": "getVod.json",
     "/m/j\\?service=OrderHistory&method=getOrders.*": "getOrders.json",
     "/m/j\\?service=OrderHistory&method=getOrder.*": "getOrder.json",
 
@@ -25,9 +25,9 @@ module.exports = exports = {
     "/m/j\\?service=ItemInventory&method=get&p1=.*": "items/getItemInventory.json",
 
     "/m/j\\?service=Authentication&method=login.*": "verify.json",
-    "/m/j\\?service=Authentication&method=verify": "verify.json",
+    "/m/j\\?service=Authentication&method=verify.*": "verify.json",
 
-    "/m/j\\?service=StoreLocator&method=locate*": "locate.json",
+    "/m/j\\?service=StoreLocator&method=locate.*": "locate.json",
 
     "/m/j\\?service=Cart&method=getThresholdItemSummary(&version=[\\d])?": "checkout/getThresholdItemSummary.json",
     "/m/j\\?service=Cart&method=get(&version=[\\d])?": "checkout/getCart.json",
@@ -40,7 +40,7 @@ module.exports = exports = {
     "/m/j\\?service=Checkout&method=isCidRequired(&version=[\\d])?": "checkout/isCidRequired.json",
     "/m/j\\?service=Checkout&method=verifyOrder(&version=[\\d])?": "checkout/verifyOrder.json",
     "/m/j\\?service=Checkout&method=placeOrder.*": "checkout/placeOrder.json",
-    "/m/j\\?service=Checkout&method=getSelectedCreditCard": "checkout/getSelectedCreditCard.json",
+    "/m/j\\?service=Checkout&method=getSelectedCreditCard.*": "checkout/getSelectedCreditCard.json",
     "/m/j\\?service=Checkout&method=getCreditCard.*": "checkout/getSelectedCreditCard.json",
     "/m/j\\?service=Checkout&method=updateCreditCard.*": "checkout/getSelectedCreditCard.json",
     "/m/j\\?service=Checkout&method=createCreditCard.*": "checkout/getSelectedCreditCard.json",
