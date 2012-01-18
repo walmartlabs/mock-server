@@ -29,7 +29,7 @@ exports.provider = function(req, res, next) {
             var path = paths[i];
             if (path.regex.test(replaceUrl)) {
                 console.log('Mocking url', req.url, 'to', (typeof path.source !== 'function' ? 'file' + path.source : 'callback'));
-                cors.applyCORS(req, res);
+                cors.applyCORS(req.headers.host, res);
 
                 if (req.method !== 'HEAD') {
                   req.method = 'GET';   // The static provider which this eventually uses does not like the options command, which breaks the mocking
