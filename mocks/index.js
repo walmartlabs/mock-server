@@ -1,13 +1,12 @@
-var cors = require('../cors'),
+var config = require('../lib/config'),
+    cors = require('../lib/cors'),
     fs = require('fs');
 
 var paths = [],
     len = 0;
 
-exports.mocksEnabled = process.env.ENABLE_MOCKS;
-
 exports.init = function() {
-    if (exports.mocksEnabled) {
+    if (config.mocksEnabled) {
         console.log("Mock server enabled");
 
         var pathSource = require('./paths');
@@ -24,7 +23,7 @@ exports.init = function() {
 };
 
 exports.provider = function(req, res, next) {
-    if (exports.mocksEnabled) {
+    if (config.mocksEnabled) {
         var replaceUrl = req.url.replace(/\?username=mobile&password=1111&/, '?');
         for (var i = 0; i < len; i++) {
             var path = paths[i];
