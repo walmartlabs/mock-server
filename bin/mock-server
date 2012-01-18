@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+var args = process.argv.slice(2);
+
+if (args.length !== 4 && args.length !== 2) {
+  console.error('Usage: mock-server appDir proxyServer [port securePort]');
+  process.exit(1);
+  return;
+}
+
+var config = require('../lib/config');
+config.appDir = args[0];
+config.proxyServer = args[1];
+config.port = args[2] || 8080;
+config.securePort = args[3] || 8081;
+
+// Start up
+require('../lib');
