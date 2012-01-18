@@ -6,20 +6,20 @@ var paths = [],
     len = 0;
 
 exports.init = function() {
-    if (config.mocksEnabled) {
-        console.log("Mock server enabled");
+  if (config.mocksEnabled) {
+    console.log("Mock server enabled");
+  }
 
-        var pathSource = require('./paths');
+  var pathSource = require('./paths');
 
-        for (var name in pathSource) {
-            paths.push({
-                regex: new RegExp(name),
-                source: pathSource[name]
-            });
-        }
+  for (var name in pathSource) {
+    paths.push({
+      regex: new RegExp(name),
+      source: pathSource[name]
+    });
+  }
 
-        len = paths.length;
-    }
+  len = paths.length;
 };
 
 exports.provider = function(req, res, next) {
