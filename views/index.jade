@@ -25,12 +25,12 @@ form(action="ms_admin/proxy-server", method="POST")
   input(type="submit", value="Switch Proxy Server")
 
 form(action="ms_admin/mocks", method="POST")
-  input(type="hidden", name="enable-mocks", value="true")
-  input(type="submit", value="Enable Mocks")
-
-form(action="ms_admin/mocks", method="POST")
-  input(type="hidden", name="enable-mocks", value="")
-  input(type="submit", value="Disable Mocks")
+  - if (!mocksEnabled)
+    input(type="hidden", name="enable-mocks", value="true")
+    input(type="submit", value="Enable Mocks")
+  - else
+    input(type="hidden", name="enable-mocks", value="")
+    input(type="submit", value="Disable Mocks")
 
 h2 Log
 pre #{log}
