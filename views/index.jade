@@ -1,0 +1,37 @@
+p Repository: #{gitPath}
+p
+  | Current Branch: #{currentBranch}
+  br
+  | Current Proxy Server: #{proxyServer}
+  br
+  | Mocks Enabled: #{mocksEnabled}
+
+form(action="ms_admin/branch", method="POST")
+  label
+    | Branches
+    select(name="branch")
+      - for (var i = 0, len = branches.length; i < len; i++)
+        option(value=branches[i])=branches[i]
+
+  input(type="submit", value="Switch branch")
+
+form(action="ms_admin/proxy-server", method="POST")
+  label
+    | Proxy Server
+    select(name="proxy")
+      - for (var i = 0, len = servers.length; i < len; i++)
+        option(value=servers[i])=servers[i]
+
+  input(type="submit", value="Switch Proxy Server")
+
+form(action="ms_admin/mocks", method="POST")
+  input(type="hidden", name="enable-mocks", value="true")
+  input(type="submit", value="Enable Mocks")
+
+form(action="ms_admin/mocks", method="POST")
+  input(type="hidden", name="enable-mocks", value="")
+  input(type="submit", value="Disable Mocks")
+
+h2 Log
+pre #{log}
+pre(style="color: red") #{error}
