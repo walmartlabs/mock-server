@@ -11,7 +11,7 @@ form(action="ms_admin/branch", method="POST")
     | Branches
     select(name="branch")
       - for (var i = 0, len = branches.length; i < len; i++)
-        option(value=branches[i])=branches[i]
+        option(value=branches[i], selected=branches[i]==currentBranch)=branches[i]
 
   input(type="submit", value="Switch branch")
 
@@ -20,7 +20,7 @@ form(action="ms_admin/proxy-server", method="POST")
     | Proxy Server
     select(name="proxy")
       - for (var i = 0, len = servers.length; i < len; i++)
-        option(value=servers[i])=servers[i]
+        option(value=servers[i], selected=servers[i]==proxyServer)=servers[i]
 
   input(type="submit", value="Switch Proxy Server")
 
