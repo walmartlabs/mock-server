@@ -10,8 +10,10 @@
     "node": "~0.4.5"
   },
   "dependencies": {
-      "connect": "~1.8",
-      "express": "~2.5"
+    "async": "~0.1",
+    "connect": "~1.8",
+    "express": "~2.5",
+    "jade": "~0.20"
   },
   "bin": {
     "mock-server": "bin/mock-server"
