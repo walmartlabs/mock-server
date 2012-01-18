@@ -19,12 +19,3 @@ build/
 *.perspectivev3
 xcuserdata
 
-#Android
-bin/
-gen/
-.settings
-.project
-.classpath
-
-dev/host.cert
-dev/host.key
