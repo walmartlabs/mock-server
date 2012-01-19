@@ -5,6 +5,8 @@ p
   | Current Proxy Server: #{proxyServer}
   br
   | Mocks Enabled: #{mocksEnabled}
+  br
+  | Build Target: #{buildTarget.name}
 
 form(action="ms_admin/branch", method="POST")
   label
@@ -31,6 +33,15 @@ form(action="ms_admin/mocks", method="POST")
   - else
     input(type="hidden", name="enable-mocks", value="")
     input(type="submit", value="Disable Mocks")
+
+form(action="ms_admin/build-target", method="POST")
+  label
+    | Build Target
+    select(name="target")
+      - for (var i = 0, len = buildTargets.length; i < len; i++)
+        option(value=i, selected=buildTargets[i]==buildTarget)=buildTargets[i].name
+
+  input(type="submit", value="Switch Build Target")
 
 h2 Log
 pre #{log}
