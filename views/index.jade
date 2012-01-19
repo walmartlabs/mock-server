@@ -1,47 +1,51 @@
 p Repository: #{gitPath}
-p
+
+div
+  br
   | Current Branch: #{currentBranch}
+  form(action="ms_admin/branch", method="POST")
+    label
+      | Branches
+      select(name="branch")
+        - for (var i = 0, len = branches.length; i < len; i++)
+          option(value=branches[i], selected=branches[i]==currentBranch)=branches[i]
+
+    input(type="submit", value="Switch branch")
+
+div
   br
   | Current Proxy Server: #{proxyServer}
+  form(action="ms_admin/proxy-server", method="POST")
+    label
+      | Proxy Server
+      select(name="proxy")
+        - for (var i = 0, len = servers.length; i < len; i++)
+          option(value=servers[i], selected=servers[i]==proxyServer)=servers[i]
+
+    input(type="submit", value="Switch Proxy Server")
+
+div
   br
   | Mocks Enabled: #{mocksEnabled}
+  form(action="ms_admin/mocks", method="POST")
+    - if (!mocksEnabled)
+      input(type="hidden", name="enable-mocks", value="true")
+      input(type="submit", value="Enable Mocks")
+    - else
+      input(type="hidden", name="enable-mocks", value="")
+      input(type="submit", value="Disable Mocks")
+
+div
   br
   | Build Target: #{buildTarget.name}
+  form(action="ms_admin/build-target", method="POST")
+    label
+      | Build Target
+      select(name="target")
+        - for (var i = 0, len = buildTargets.length; i < len; i++)
+          option(value=i, selected=buildTargets[i]==buildTarget)=buildTargets[i].name
 
-form(action="ms_admin/branch", method="POST")
-  label
-    | Branches
-    select(name="branch")
-      - for (var i = 0, len = branches.length; i < len; i++)
-        option(value=branches[i], selected=branches[i]==currentBranch)=branches[i]
-
-  input(type="submit", value="Switch branch")
-
-form(action="ms_admin/proxy-server", method="POST")
-  label
-    | Proxy Server
-    select(name="proxy")
-      - for (var i = 0, len = servers.length; i < len; i++)
-        option(value=servers[i], selected=servers[i]==proxyServer)=servers[i]
-
-  input(type="submit", value="Switch Proxy Server")
-
-form(action="ms_admin/mocks", method="POST")
-  - if (!mocksEnabled)
-    input(type="hidden", name="enable-mocks", value="true")
-    input(type="submit", value="Enable Mocks")
-  - else
-    input(type="hidden", name="enable-mocks", value="")
-    input(type="submit", value="Disable Mocks")
-
-form(action="ms_admin/build-target", method="POST")
-  label
-    | Build Target
-    select(name="target")
-      - for (var i = 0, len = buildTargets.length; i < len; i++)
-        option(value=i, selected=buildTargets[i]==buildTarget)=buildTargets[i].name
-
-  input(type="submit", value="Switch Build Target")
+    input(type="submit", value="Switch Build Target")
 
 h2 Log
 pre #{log}
