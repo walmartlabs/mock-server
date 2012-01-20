@@ -20,17 +20,24 @@ module.exports = exports = {
     "/m/j\\?service=OrderHistory&method=getOrders.*": "getOrders.json",
     "/m/j\\?service=OrderHistory&method=getOrder.*": "getOrder.json",
 
-
     "/m/j\\?service=Item&method=get&p1=(.*)": "item.json",
     "/m/j\\?service=ItemInventory&method=get&p1=.*": "items/getItemInventory.json",
+
+    "/m/j\\?service=AppVersion&method=getVersionRequired.*": "AppVersion/getVersionRequired.json",
 
     "/m/j\\?service=Authentication&method=login.*": "verify.json",
     "/m/j\\?service=Authentication&method=verify.*": "verify.json",
 
+    "/m/j\\?service=Authentication&method=logout.*": "Authentication/logout.json",
+
     "/m/j\\?service=StoreLocator&method=locate.*": "locate.json",
+
+    "/m/j\\?service=Cart&method=add.*": "Cart/add.json",
 
     "/m/j\\?service=Cart&method=getThresholdItemSummary(&version=[\\d])?": "checkout/getThresholdItemSummary.json",
     "/m/j\\?service=Cart&method=get(&version=[\\d])?": "checkout/getCart.json",
+
+    "/m/j\\?service=Cart&method=remove.*": "Cart/remove.json",
 
     "/m/j\\?service=Checkout&method=getMessageKeys(&version=[\\d])?": "checkout/getMessageKeys.json",
     "/m/j\\?service=Checkout&method=getProtoOrder(&version=[\\d])?": "checkout/getProtoOrder.json",
