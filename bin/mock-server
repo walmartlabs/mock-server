@@ -11,7 +11,7 @@ if (args.length !== 4 && args.length !== 2) {
 var config = require('../lib/config');
 config.appDir = args[0];
 config.proxyServer = args[1];
-config.port = args[2] || 8080;
+config.port = args[2] || process.env.PORT || 8080;
 config.securePort = args[3] || 8081;
 
 // Start up
