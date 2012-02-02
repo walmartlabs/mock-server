@@ -12,6 +12,8 @@ module.exports = exports = {
     "/m/j\\?service=Taxonomy&method=getAllDepartments.*": "getAllDepartments.json",
     "/m/j\\?service=Taxonomy&method=getRollBacks.*": "getRollbacks.json",
     "/m/j\\?service=Browse&method=browseByToken.*": "browseByToken.json",
+    "/m/j\\?service=Browse&method=extendedBrowseByToken.*": "Browse/extendedBrowseByToken.json",
+    "/m/j\\?service=Browse&method=extendedSearch.*": "Browse/extendedSearch.json",
     "/m/j\\?service=Browse&method=search.*": "search.json",
     "/m/j\\?service=Browse&method=searchByDepartment.*": "searchByDepartment.json",
     "/m/j\\?service=Suggestions&method=getSuggestions.*": "getSuggestions.json",
