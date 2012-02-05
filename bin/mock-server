@@ -16,5 +16,10 @@ config.port = args[2] || process.env.PORT || 8080;
 config.forwardPort = args[2] || (config.isHeroku ? 80 : config.port)
 config.securePort = args[3] || (config.isHeroku ? 443 : 8081);
 
+// Ensure that node is available on the path
+if (config.isHeroku) {
+  process.env.PATH = __dirname + '/../bin/:' + process.env.PATH;
+}
+
 // Start up
 require('../lib');
