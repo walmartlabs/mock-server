@@ -9,10 +9,17 @@ if (args.length !== 4 && args.length !== 2) {
 }
 
 var config = require('../lib/config');
-config.appDir = args[0];
+config.isHeroku = args[0] === 'heroku';
+config.appDir = config.isHeroku ? '/tmp/mock-server' : args[0];
 config.proxyServer = args[1];
-config.port = args[2] || 8080;
-config.securePort = args[3] || 8081;
+config.port = args[2] || process.env.PORT || 8080;
+config.forwardPort = args[2] || (config.isHeroku ? 80 : config.port)
+config.securePort = args[3] || (config.isHeroku ? 443 : 8081);
+
+// Ensure that node is available on the path
+if (config.isHeroku) {
+  process.env.PATH = __dirname + '/../bin/:' + process.env.PATH;
+}
 
 // Start up
 require('../lib');

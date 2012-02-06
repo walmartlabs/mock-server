@@ -14,6 +14,12 @@ div
 
 div
   br
+  | Pull Latest
+  form(action="ms_admin/pull", method="POST")
+    input(type="submit", value="Pull")
+
+div
+  br
   | Current Proxy Server: #{proxyServer}
   form(action="ms_admin/proxy-server", method="POST")
     label
