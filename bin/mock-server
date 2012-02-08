@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
 var args = process.argv.slice(2);
-
-if (args.length !== 4 && args.length !== 2) {
-  console.error('Usage: mock-server appDir proxyServer [port securePort]');
+if (args.length !== 5 && args.length !== 4 && args.length !== 2) {
+  console.error('Usage: mock-server appDir proxyServer [port securePort] [--live-reload]');
   process.exit(1);
   return;
 }
@@ -15,6 +14,7 @@ config.proxyServer = args[1];
 config.port = args[2] || process.env.PORT || 8080;
 config.forwardPort = args[2] || (config.isHeroku ? 80 : config.port)
 config.securePort = args[3] || (config.isHeroku ? 443 : 8081);
+config.liveReload = args[4] && args[4] === '--live-reload';
 
 // Ensure that node is available on the path
 if (config.isHeroku) {
