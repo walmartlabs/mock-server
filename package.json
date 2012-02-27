@@ -10,7 +10,7 @@
     "node": ">=0.4.5"
   },
   "dependencies": {
-    "async": "~0.1",
+    "async": "0.1.16",
     "campfire": "~0.1",
     "connect": "~1.8",
     "express": "~2.5",
