@@ -1,7 +1,7 @@
 {
   "name": "mock-server",
   "description": "Your friendly mock server",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "repository": {
     "type": "git",
     "url": "git://github.com/walmartlabs/mock-server.git"
