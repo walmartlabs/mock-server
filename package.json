@@ -1,7 +1,7 @@
 {
   "name": "mock-server",
   "description": "Your friendly mock server",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "repository": {
     "type": "git",
     "url": "git://github.com/walmartlabs/mock-server.git"
@@ -25,5 +25,6 @@
   "bin": {
     "mock-server": "bin/mock-server"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "optionalDependencies": {}
 }
