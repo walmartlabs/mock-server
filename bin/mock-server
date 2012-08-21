@@ -1,20 +1,20 @@
 #!/usr/bin/env node
+var argv = require('optimist').argv;
 
-var args = process.argv.slice(2);
-if (args.length !== 5 && args.length !== 4 && args.length !== 2) {
-  console.error('Usage: mock-server appDir proxyServer [port securePort] [--live-reload]');
+if (argv._.length !== 1) {
+  console.error('Usage: mock-server appDir [--proxy-server=proxyServer] [--port=port] [--secure-port=securePort] [--live-reload]');
   process.exit(1);
   return;
 }
 
 var config = require('../lib/config');
-config.isHeroku = args[0] === 'heroku';
-config.appDir = config.isHeroku ? '/tmp/mock-server' : args[0];
-config.proxyServer = args[1];
-config.port = parseInt(args[2] || process.env.PORT || 8080);
-config.forwardPort = parseInt(args[2] || (config.isHeroku ? 80 : config.port));
-config.securePort = parseInt(args[3] || (config.isHeroku ? 443 : 8081));
-config.liveReload = args[4] && args[4] === '--live-reload';
+config.isHeroku = argv._[0] === 'heroku';
+config.appDir = config.isHeroku ? '/tmp/mock-server' : argv._[0];
+config.proxyServer = argv['proxy-server'];
+config.port = parseInt(argv.port || process.env.PORT || 8080);
+config.forwardPort = parseInt(argv.port || (config.isHeroku ? 80 : config.port));
+config.securePort = parseInt(argv['secure-port'] || (config.isHeroku ? 443 : 8081));
+config.liveReload = argv['live-reload'];
 
 // Ensure that node is available on the path
 if (config.isHeroku) {
