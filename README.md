@@ -22,3 +22,6 @@ that are currently under development.
 - Heroku support
 - Campfire notifications
 
+
+## Example
+An example project has been setup [here](https://github.com/kpdecker/mock-server-meetup).
