@@ -18,7 +18,7 @@ config.liveReload = argv['live-reload'];
 
 // Ensure that node is available on the path
 if (config.isHeroku) {
-  process.env.PATH = __dirname + '/../bin/:' + process.env.PATH;
+  process.env.PATH = __dirname + '/../bin/:/tmp/mock-server/node_modules/.bin:' + process.env.PATH;
 }
 
 // Start up
