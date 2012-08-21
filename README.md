@@ -1,7 +1,24 @@
+# Mock Server
+
 Your friendly mock server
 
-If using the branch switching feature then the repository should have the following set
+Node server that easily allows for development and testing of SPA application running against
+production services.
 
-    git config branch.autosetupmerge true
+## Features
 
-to ensure proper tracking.
+- Remote Service Proxy
+- CORS remapping
+- Cookie remapping
+- Browser live reload
+
+### Server Mode
+
+Server mode allows for setup of simple testing servers that eases the testing process for features
+that are currently under development.
+
+- Automated rebuild from github pushes
+- Branch selection
+- Heroku support
+- Campfire notifications
+
