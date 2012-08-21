@@ -8,6 +8,8 @@ production services.
 ## Features
 
 - Remote Service Proxy
+- Local file override of remote proxy
+- Mock data sources
 - CORS remapping
 - Cookie remapping
 - Browser live reload
