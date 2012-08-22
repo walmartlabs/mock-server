@@ -26,7 +26,7 @@ that are currently under development.
 
 ## Setup
 
-1. In the root of the SPA application create _mock-server.json_. See [example]().
+1. In the root of the SPA application create _mock-server.json_. See [example](https://github.com/kpdecker/mock-server-meetup/blob/master/mock-server.json).
 2. (Optional) Define _package.json_ with build dependencies (lumbar, grunt)
 3. Deploy to heroku
   1. `git clone git@github.com:walmartlabs/mock-server.git`
