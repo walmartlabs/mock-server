@@ -2,7 +2,7 @@
 var argv = require('optimist').argv;
 
 if (argv._.length !== 1) {
-  console.error('Usage: mock-server appDir [--proxy-server=proxyServer] [--port=port] [--secure-port=securePort] [--live-reload]');
+  console.error('Usage: mock-server appDir [--proxy-server=proxyServer] [--port=port] [--secure-port=securePort] [--live-reload] [--force-cors]');
   process.exit(1);
   return;
 }
@@ -15,6 +15,7 @@ config.port = parseInt(argv.port || process.env.PORT || 8080);
 config.forwardPort = parseInt(argv.port || (config.isHeroku ? 80 : config.port));
 config.securePort = parseInt(argv['secure-port'] || (config.isHeroku ? 443 : 8081));
 config.liveReload = argv['live-reload'];
+config.forceCors = argv['force-cors'];
 
 // Ensure that node is available on the path
 if (config.isHeroku) {
