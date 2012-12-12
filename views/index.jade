@@ -1,22 +1,23 @@
 p Repository: #{gitPath}
 
-div
-  br
-  | Current Branch: #{currentBranch}
-  form(action="ms_admin/branch", method="POST")
-    label
-      | Branches
-      select(name="branch")
-        - for (var i = 0, len = branches.length; i < len; i++)
-          option(value=branches[i], selected=branches[i]==currentBranch)=branches[i]
+- if (isHeroku)
+  div
+    br
+    | Current Branch: #{currentBranch}
+    form(action="ms_admin/branch", method="POST")
+      label
+        | Branches
+        select(name="branch")
+          - for (var i = 0, len = branches.length; i < len; i++)
+            option(value=branches[i], selected=branches[i]==currentBranch)=branches[i]
 
-    input(type="submit", value="Switch branch")
+      input(type="submit", value="Switch branch")
 
-div
-  br
-  | Pull Latest
-  form(action="ms_admin/pull", method="POST")
-    input(type="submit", value="Pull")
+  div
+    br
+    | Pull Latest
+    form(action="ms_admin/pull", method="POST")
+      input(type="submit", value="Pull")
 
 div
   br
@@ -41,18 +42,19 @@ div
       input(type="hidden", name="enable-mocks", value="")
       input(type="submit", value="Disable Mocks")
 
-div
-  br
-  | Build Target: #{buildTarget.name}
-  form(action="ms_admin/build-target", method="POST")
-    label
-      | Build Target
-      select(name="target")
-        - for (var i = 0, len = buildTargets.length; i < len; i++)
-          option(value=i, selected=buildTargets[i]==buildTarget)=buildTargets[i].name
+- if (isHeroku)
+  div
+    br
+    | Build Target: #{buildTarget.name}
+    form(action="ms_admin/build-target", method="POST")
+      label
+        | Build Target
+        select(name="target")
+          - for (var i = 0, len = buildTargets.length; i < len; i++)
+            option(value=i, selected=buildTargets[i]==buildTarget)=buildTargets[i].name
 
-    input(type="submit", value="Switch Build Target")
+      input(type="submit", value="Switch Build Target")
 
-h2 Log
-pre #{log}
-pre(style="color: red") #{error}
+  h2 Log
+    pre #{log}
+    pre(style="color: red") #{error}
