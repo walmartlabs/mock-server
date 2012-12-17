@@ -42,19 +42,19 @@ div
       input(type="hidden", name="enable-mocks", value="")
       input(type="submit", value="Disable Mocks")
 
+div
+  br
+  | Build Target: #{buildTarget.name}
+  form(action="ms_admin/build-target", method="POST")
+    label
+      | Build Target
+      select(name="target")
+        - for (var i = 0, len = buildTargets.length; i < len; i++)
+          option(value=i, selected=buildTargets[i]==buildTarget)=buildTargets[i].name
+
+    input(type="submit", value="Switch Build Target")
+
 - if (isHeroku)
-  div
-    br
-    | Build Target: #{buildTarget.name}
-    form(action="ms_admin/build-target", method="POST")
-      label
-        | Build Target
-        select(name="target")
-          - for (var i = 0, len = buildTargets.length; i < len; i++)
-            option(value=i, selected=buildTargets[i]==buildTarget)=buildTargets[i].name
-
-      input(type="submit", value="Switch Build Target")
-
   h2 Log
   pre #{log}
   pre(style="color: red") #{error}
