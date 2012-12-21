@@ -41,8 +41,8 @@ and `MOCK_PUB` environment variables.
 ```sh
 $ heroku config:add \
     GIT_SSH="/app/git_ssh.sh" \
-    MOCK_KEY="-----BEGIN RSA PRIVATE KEY-----\nget\n\your\own\n-----END RSA PRIVATE KEY-----" \
-    MOCK_PUB="ssh-rsa publickey"
+    MOCK_KEY="`cat ~/.ssh/id_rsa`" \
+    MOCK_PUB="`cat ~/.ssh/id_rsa.pub`"
 ```
 
 ### Automatic Rebuild
