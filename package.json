@@ -7,7 +7,7 @@
     "url": "git://github.com/walmartlabs/mock-server.git"
   },
   "engines": {
-    "node": ">= 0.6",
+    "node": "~0.8",
     "npm": "~1.1"
   },
   "dependencies": {
