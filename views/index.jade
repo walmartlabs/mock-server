@@ -1,6 +1,6 @@
 p Repository: #{gitPath}
 
-- if (isHeroku)
+- if (isStandalone)
   div
     br
     | Current Branch: #{currentBranch}
@@ -54,7 +54,7 @@ div
 
     input(type="submit", value="Switch Build Target")
 
-- if (isHeroku)
+- if (isStandalone)
   h2 Log
   pre #{log}
   pre(style="color: red") #{error}

@@ -20,5 +20,5 @@ build/
 xcuserdata
 
 .env
-
+.project
 *.sublime-*
