@@ -22,6 +22,7 @@
     "pubnub": "~3.4",
     "underscore": "~1.4",
     "socket.io": "~0.9",
+    "forever-monitor": "~1.2",
     "watch": "~0.7"
   },
   "bin": {
