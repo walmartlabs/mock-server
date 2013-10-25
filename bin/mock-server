@@ -1,11 +1,18 @@
 #!/usr/bin/env node
 var argv = require('optimist').argv;
+var forever = require('../lib/forever')
 
 if (argv._.length !== 1) {
   console.error('Usage: mock-server appDir [--proxy-server=proxyServer] [--port=port] [--secure-port=securePort] [--live-reload] [--force-cors] [--standalone]');
   process.exit(1);
   return;
 }
+
+if (argv['forever']) {
+  forever();
+  return
+}
+
 
 var config = require('../lib/config');
 config.isHeroku = argv._[0] === 'heroku';
@@ -15,6 +22,7 @@ config.proxyServer = argv['proxy-server'] || process.env.DEFAULT_PROXY;
 config.port = parseInt(argv.port || process.env.PORT || 8080);
 config.forwardPort = parseInt(argv.port || (config.isHeroku ? 80 : config.port));
 config.securePort = parseInt(argv['secure-port'] || (config.isHeroku ? 443 : 8081));
+config.forever = argv['forever'];
 config.liveReload = argv['live-reload'];
 config.forceCors = argv['force-cors'];
 
