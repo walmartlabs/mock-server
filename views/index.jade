@@ -59,9 +59,6 @@ div
   br
   | Config
   form(action="ms_admin/config", method="POST", onSubmit="try { JSON.parse(this.config.value) } catch (e) { alert('invalid JSON value'); return false; } return true;")
-    label
-      | Enter JSON configuration
-    br
     textarea(name="config", style="width: 40em; height: 20em") #{configText}
 
     br
