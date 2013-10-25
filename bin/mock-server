@@ -1,11 +1,18 @@
 #!/usr/bin/env node
 var argv = require('optimist').argv;
+var forever = require('../lib/forever')
 
 if (argv._.length !== 1) {
   console.error('Usage: mock-server appDir [--proxy-server=proxyServer] [--port=port] [--secure-port=securePort] [--live-reload] [--force-cors]');
   process.exit(1);
   return;
 }
+
+if (argv['forever']) {
+  forever();
+  return
+}
+
 
 var config = require('../lib/config');
 config.isHeroku = argv._[0] === 'heroku';
