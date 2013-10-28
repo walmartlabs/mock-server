@@ -55,6 +55,15 @@ div
     input(type="submit", value="Switch Build Target")
 
 - if (isStandalone)
+div
+  br
+  | Config
+  form(action="ms_admin/config", method="POST", onSubmit="try { JSON.parse(this.config.value) } catch (e) { alert('invalid JSON value'); return false; } return true;")
+    textarea(name="config", style="width: 40em; height: 20em") #{configText}
+
+    br
+    input(type="submit", value="Update Config")
+
   h2 Log
   pre #{log}
   pre(style="color: red") #{error}
