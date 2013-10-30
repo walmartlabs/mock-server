@@ -16,7 +16,8 @@ if (argv['forever']) {
 
 var config = require('../lib/config');
 config.isHeroku = argv._[0] === 'heroku';
-config.isStandalone = config.isHeroku || argv['standalone'];
+config.isProxied = config.isHeroku || argv.proxied;
+config.isStandalone = config.isHeroku || argv.standalone;
 config.appDir = config.isHeroku ? '/tmp/mock-server' : argv._[0];
 config.proxyServer = argv['proxy-server'] || process.env.DEFAULT_PROXY;
 config.port = parseInt(argv.port || process.env.PORT || 8080);
