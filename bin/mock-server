@@ -3,7 +3,7 @@ var argv = require('optimist').argv;
 var forever = require('../lib/forever')
 
 if (argv._.length !== 1) {
-  console.error('Usage: mock-server appDir [--proxy-server=proxyServer] [--port=port] [--secure-port=securePort] [--live-reload] [--force-cors] [--standalone]');
+  console.error('Usage: mock-server appDir [--proxy-server=proxyServer] [--port=port] [--secure-port=securePort] [--live-reload] [--force-cors] [--standalone] [--proxied]');
   process.exit(1);
   return;
 }
