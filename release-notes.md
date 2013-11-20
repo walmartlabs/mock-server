@@ -2,7 +2,13 @@
 
 ## Development
 
-[Commits](https://github.com/walmartlabs/mock-server/compare/v1.2.0...master)
+[Commits](https://github.com/walmartlabs/mock-server/compare/v1.2.1...master)
+
+## v1.2.1 - November 20th, 2013
+
+- [#14](https://github.com/walmartlabs/mock-server/pull/14) - colorize logs to prevent ansi escape codes from displaying ([@patrickkettner](https://api.github.com/users/patrickkettner))
+
+[Commits](https://github.com/walmartlabs/mock-server/compare/v1.2.0...v1.2.1)
 
 ## v1.2.0 - November 4th, 2013
 
