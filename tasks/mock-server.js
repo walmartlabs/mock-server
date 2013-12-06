@@ -5,8 +5,8 @@
 
   grunt.initConfig({
     'mock-server': {
-      proxied: false,
       standalone: true,
+      appDir: '../public'
     }
   });
 
