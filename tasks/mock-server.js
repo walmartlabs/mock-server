@@ -58,6 +58,7 @@ module.exports = function(grunt) {
       throw grunt.util.error('"appDir" option required for mock-server task');
     }
 
+    // start the server
     require('../lib');
   });
 };
