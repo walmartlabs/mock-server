@@ -103,3 +103,7 @@ build pack.
 
 ## Example
 An example project has been setup [here](https://github.com/kpdecker/mock-server-meetup).
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/walmartlabs/mock-server/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
