@@ -2,7 +2,12 @@
 
 ## Development
 
-[Commits](https://github.com/walmartlabs/mock-server/compare/v1.3.0...master)
+[Commits](https://github.com/walmartlabs/mock-server/compare/v1.3.2...master)
+
+## v1.3.2 - July 23rd, 2014
+- updated self signed cert - d6d640a
+
+[Commits](https://github.com/walmartlabs/mock-server/compare/v1.3.0...v1.3.2)
 
 ## v1.3.0 - December 22nd, 2013
 - [#15](https://github.com/walmartlabs/mock-server/pull/15) - add grunt task ([@patrickkettner](https://api.github.com/users/patrickkettner))
