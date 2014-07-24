@@ -2,6 +2,11 @@
 
 ## Development
 
+[Commits](https://github.com/walmartlabs/mock-server/compare/v1.3.3...master)
+
+## v1.3.3 - July 24th, 2014
+- update key for cert - e5d62ec
+
 [Commits](https://github.com/walmartlabs/mock-server/compare/v1.3.2...master)
 
 ## v1.3.2 - July 23rd, 2014
