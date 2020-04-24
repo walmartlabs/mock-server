@@ -19,7 +19,7 @@
     "jake": "*",
     "npm": "*",
     "optimist": "~0.4",
-    "pubnub": "~3.4",
+    "pubnub": "~3.16.5",
     "underscore": "~1.4",
     "socket.io": "~0.9",
     "forever-monitor": "~1.2",
